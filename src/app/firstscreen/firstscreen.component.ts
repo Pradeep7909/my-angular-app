@@ -28,7 +28,7 @@ export class FirstscreenComponent implements OnInit {
     if (carouselElement) {
       console.log('🟢 carouselElement');
       this.carouselInstance = new bootstrap.Carousel(carouselElement, {
-        interval: 1000,
+        interval: 2000,
         pause: false,
       });
       if (this.carouselInstance) {
