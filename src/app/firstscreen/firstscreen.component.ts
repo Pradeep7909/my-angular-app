@@ -10,6 +10,7 @@ declare var bootstrap: any;
 export class FirstscreenComponent implements OnInit {
   isloading = true;
   private carouselInstance: any;
+  title = 'my-angular-app';
 
   ngOnInit(): void {
     setTimeout(() => {
@@ -24,7 +25,7 @@ export class FirstscreenComponent implements OnInit {
 
   initializeCarousel() {
     console.log('🟢 initializeCarousel');
-    const carouselElement = document.querySelector('#carouseltest');
+    const carouselElement = document.querySelector('#carouselTest');
     if (carouselElement) {
       console.log('🟢 carouselElement');
       this.carouselInstance = new bootstrap.Carousel(carouselElement, {
