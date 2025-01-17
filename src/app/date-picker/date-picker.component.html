@@ -1,4 +1,7 @@
+<div class="p-4">
+
 <p>date-picker works!</p>
+
 
 <div class="form-group">
   <label for="datepicker">Select a date:</label>
@@ -12,3 +15,14 @@
 
 <p>Selected Date: {{ selectedDate | date }}</p>
 
+  <hijri-gregorian-datepicker
+    [label]="'Birth Date'"
+    [(selectedDate)]="selectedDate"
+    [isRequired]="true"
+    [GregLabel]="'Gregorian'"
+    [hijriLabel]  ="'Hijri'"
+    [selectedDateType]="selectedDateType"
+    #datePicker>
+  </hijri-gregorian-datepicker>`
+
+</div>
